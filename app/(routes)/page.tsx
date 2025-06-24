@@ -13,7 +13,7 @@ export default function Home() {
       <section>
         <PromoSection/>
       </section>
-      <section className="min-h-screen lg:min-h-auto max-w-screen overflow-hidden">
+      <section className=" lg:min-h-auto max-w-screen overflow-hidden">
         <CategorySection/>
       </section>
       <section className="py-12">
