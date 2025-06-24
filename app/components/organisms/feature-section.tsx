@@ -14,7 +14,7 @@ const FeatureSection = () => {
         {id: 5, name: "London", select: 'london'},
         {id: 6, name: "Sydney", select: 'sydney'},
     ]
-    const filteredData = selected === 'All'
+    const filteredData = selected === 'bali'
      ? hotelsInBali : hotelsInBali.filter((item)=> item.city === selected)
     return(
     <div 
@@ -30,8 +30,8 @@ const FeatureSection = () => {
             <h1 className="text-xl font-semibold text-neutral-800">Featured Properties</h1>  
             <div className="mt-4">
                 {sleceted.map((item) => (
-                    <button key={item.id} onClick={() => setSelected(item.name)} className="mr-2 mb-2">
-                        <span className={` ${selected === item.name ? 'bg-neutral-900 text-xs text-white font-semibold': 'text-neutral-800 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] text-xs'} inline-block  text-neutral-700 px-4 py-2 rounded-xs mr-2 mb-2 transition-colors duration-300 ease-linear `}>
+                    <button key={item.id} onClick={() => setSelected(item.select)} className="mr-2 mb-2">
+                        <span className={` ${selected === item.select ? 'bg-neutral-900 text-xs text-white font-semibold': 'text-neutral-800 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] text-xs'} inline-block  text-neutral-700 px-4 py-2 rounded-xs mr-2 mb-2 transition-colors duration-300 ease-linear `}>
                             {item.name}
                         </span>
                     </button>
