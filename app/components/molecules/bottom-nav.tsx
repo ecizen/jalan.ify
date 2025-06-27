@@ -34,13 +34,13 @@ export default function BottomNav() {
             href={item.link}
             onClick={() => clickNav(item.id)}
             className={`flex flex-col items-center justify-center text-xs transition-all duration-200 ${
-              isActive ? 'text-yellow-500' : 'text-neutral-500'
+              isActive ? 'text-blue-500' : 'text-neutral-500'
             }`}
           >
             <HugeiconsIcon
               size={24}
               icon={item.icon}
-              color={isActive ? 'text-yelow-500' : 'rgb(115 115 115)'} // Tailwind: blue-500 / neutral-500
+              color={isActive ? 'text-blue-500' : 'rgb(115 115 115)'} // Tailwind: blue-500 / neutral-500
             />
             <span className={`ease-in-out transition-all mt-1 duration-300`}>{item.label}</span>
           </a>
