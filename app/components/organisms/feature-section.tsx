@@ -1,11 +1,11 @@
 'use client';
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import hotelsInBali from "@/app/data-dumy/dumy-hotel";
 import FeaturedCard from "../molecules/card-feutre";
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,

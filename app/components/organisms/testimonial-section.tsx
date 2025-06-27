@@ -3,7 +3,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { StarIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { motion } from "framer-motion";
+import { motion, Variant } from "framer-motion";
 
 const testimonials = [
   {
@@ -32,7 +32,7 @@ const testimonials = [
   },
 ];
 
-const fadeInVariant = (direction: 'left' | 'right') => ({
+const fadeInVariant :any = (direction: 'left' | 'right') => ({
   hidden: {
     opacity: 0,
     x: direction === 'left' ? -50 : 50,

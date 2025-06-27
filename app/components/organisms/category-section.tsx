@@ -7,14 +7,14 @@ import travelData from "@/app/data-dumy/dumy";
 import { motion } from "framer-motion";
 
 const CategorySection = () => {
-  const fadeUp = {
-    hidden: { opacity: 0, y: 40 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
-    },
-  };
+const fadeUp:any = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] },
+  },
+};
 
   const staggerContainer = {
     hidden: {},

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const stats = [
   { id: 1, value: '10+', label: 'Your Experience Client' },
@@ -8,7 +8,7 @@ const stats = [
   { id: 3, value: '4.8', label: 'Overall Rating' },
 ];
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40, scale: 0.95 },
   visible: (i: number) => ({
     opacity: 1,
