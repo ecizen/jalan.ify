@@ -24,9 +24,9 @@ const HeroSection = () => {
 
       <div className="hero w-full z-10 relative flex flex-col items-center text-center">
         <div className="flex flex-col items-center px-8 py-12">
-          <div className="text-xs text-black cursor-pointer px-4 py-2 bg-[#FEFA17] rounded-full max-w-max flex items-center space-x-2">
+          <div className="text-xs text-black cursor-pointer px-4 py-2 bg-blue-500 rounded-full max-w-max flex items-center space-x-2">
             <Image src={images.earth} alt="earth" width={18} />
-            <h1 className="font-semibold">Explore the World</h1>
+            <h1 className="font-semibold text-white">Explore the World</h1>
           </div>
 
           <h1 className="lg:text-3xl md:text-2xl text-xl font-semibold mt-6">

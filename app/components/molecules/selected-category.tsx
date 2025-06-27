@@ -23,9 +23,9 @@ const SelectCategory:React.FC<CardCategoryProps> = ({selectedCategory, setSelect
                 onClick={() => setSelectedCategory(category.selectValue)}
                 className={` text-center ${
                     selectedCategory === category.selectValue
-                    ? 'border-[#EBEA22] border text-[#EBEA22] bg-[#fafaea7c] font-medium'
+                    ? 'border-blue-600 border text-blue-500 bg-[#fafaea7c] font-medium'
                     : 'bg-white border border-gray-200 text-black'
-                } hover:border-[#EBEA22] hover:text-[#FFCC00] hover:bg-[#fafaea] text-sm transition-all duration-300 ease-in-out px-4 py-2 rounded-md`}
+                } hover:border-blue-600 hover:text-blue-500 hover:bg-[#fafaea] text-sm transition-all duration-300 ease-in-out px-4 py-2 rounded-md`}
                 >
                 {category.name}
               </button>

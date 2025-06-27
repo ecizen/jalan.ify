@@ -20,7 +20,7 @@ const ADSHeader = () => {
       </div>
       <Link
         href="#"
-        className="lg:flex hidden lg:relative absolute right-0 bottom-0 items-center gap-1 text-orange-500 font-medium hover:underline transition"
+        className="lg:flex hidden lg:relative absolute right-0 bottom-0 items-center gap-1 text-blue-600 font-medium hover:underline transition"
       >
         Get This Now
         <ArrowRight size={16} className="text-white" />

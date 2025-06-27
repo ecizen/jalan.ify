@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
       <nav className="w-full px-8 py-2 grid lg:grid-cols-5 grid-cols-2  ">
         <div className="flex items-center justify-start col-span-1 ">
-          <h1 className="text-[#cecb0c] text-xl font-semibold">Jalan.<span className="text-neutral-950">ify</span></h1>
+          <h1 className="text-blue-600 text-xl font-semibold">Jalan.<span className="text-neutral-950">ify</span></h1>
         </div>
         <div className="lg:flex items-center justify-center col-span-3  hidden">
           <ul className="flex items-center space-x-4">

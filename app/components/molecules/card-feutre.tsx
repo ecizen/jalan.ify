@@ -38,13 +38,13 @@ const FeaturedCard: React.FC<TravelData> = ({ travel }) => {
                 <div className="flex items-center justify-between">
                   <h1 className="text-xs font-semibold line-clamp-1">{item.name}</h1>
                   <h5 className="text-xs">
-                    (<span className="text-yellow-600 text-xs font-semibold">{item.rating}</span>)
+                    (<span className="text-blue-600 text-xs font-semibold">{item.rating}</span>)
                   </h5>
                 </div>
                 <h5 className="text-xs text-gray-500 mt-2">{item.reviews} reviews</h5>
                 <div className="mt-4 flex items-center justify-between">
                   <h1 className="text-sm font-semibold">Rp {item.price.toLocaleString('id-ID')}</h1>
-                  <button className="text-yellow-600 text-xs font-bold rounded-md">Book Now</button>
+                  <button className="text-blue-600 text-xs font-bold rounded-md">Book Now</button>
                 </div>
               </div>
             </div>

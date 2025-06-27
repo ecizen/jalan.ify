@@ -4,6 +4,7 @@ import 'swiper/css';
 import travelData from '@/app/data-dumy/dumy';
 import Image from 'next/image';
 import { Heart } from 'lucide-react';
+import {motion} from 'framer-motion'
 import React, { useState } from 'react';
 
 type filteredData = {
@@ -59,12 +60,13 @@ const CardCategory: React.FC<TravelData> = ({travel}) => {
                 <div>
                     <h3 className="mt-2 text-sm font-semibold line-clamp-1">{item.name}</h3>
                     <p className='text-sm mt-2'>{item.location}</p>
-                    <p className=" text-[#cecb0c] font-bold text-sm mt-2">
+                    <p className=" text-blue-700
+                     font-bold text-sm mt-2">
                     Rp {item.price.toLocaleString('id-ID')}
                     </p>
                 </div>
-                <button   onClick={() => addLike(item.id)} className={ `${activeLike === item.id ? 'bg-yellow-100': 'bg-[#d1d1cb7c] border'} w-[40px] h-[40px] flex items-center justify-center  rounded-full bg-[#d1d1cb7c] border`}>
-                    <Heart size={18} className={`${activeLike === item.id? 'text-yellow-600 scale-125': 'text-neutral-800 shadow-lg'} transition-all ease-in-out duration-500 `}/>
+                <button   onClick={() => addLike(item.id)} className={ `${activeLike === item.id ? 'bg-blue-50': 'bg-[#d1d1cb7c] border'} p-2 flex items-center justify-center  rounded-full bg-[#d1d1cb7c] border`}>
+                    <Heart size={18} className={`${activeLike === item.id? 'text-blue-600 scale-125': 'text-neutral-800 shadow-lg'} transition-all ease-in-out duration-500 `}/>
                 </button>
               </div>
             <img
